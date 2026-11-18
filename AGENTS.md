@@ -89,3 +89,10 @@ check that the Stage-2 cell (step 2) survived and ran.
 3. Keep big intermediates in `data/large_files/`; write tracked results to `data/` and plots to `figures/`.
 4. Preserve the normalization + scoring functions (Jaccard, Levenshtein via `Levenshtein.ratio`, embedding cosine) — changing them silently changes research results.
 5. Add new pipeline stages as numbered notebooks under `scripts/` following the existing conventions, rather than scattering ad-hoc scripts.
+
+## Repository housekeeping
+
+IDE artifacts (`.idea/`, `*.iml`) and Jupyter checkpoints (`.ipynb_checkpoints/`)
+are not tracked. Bulk data and model directories (`large_files/`, `large_data/`)
+are never committed; keep large inputs and outputs there. See the
+[organizer](https://github.com/kasev/organizer) workspace for the shared workflow.
